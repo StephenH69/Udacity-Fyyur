@@ -1,0 +1,87 @@
+Installs and data needed for cross working between machines.
+
+sudo 
+Install PostgreSQL
+sudo apt-get install postgresql
+
+Install Psycopg2
+pip3 install psycopg2-binary
+https://www.psycopg.org/docs/install.html
+
+
+install psycopg2-binary
+install setuptools
+install SQLAlchemy
+install flask
+install flask-SQLAlchemy
+install Flask-Migrate
+install Flask-Script
+install alembic
+
+babel
+python-dateutil==2.6.0
+flask-moment
+flask-wtf
+
+Use pip install -U Flask-SQLAlchemy
+
+https://tableplus.com/blog/2018/10/how-to-start-stop-restart-postgresql-server.html
+https://flask-migrate.readthedocs.io/en/latest/
+https://alembic.sqlalchemy.org/en/latest/
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-18-04
+
+sudo -u <username> -i
+createdb <database_name>
+dropdb <database_name>
+dropdb <database_name> && createdb <database_name>
+
+
+psql <dbname> [<username>]
+\l List databases
+\c <dbname> Connect to database named
+\dt show tables
+\d <tablename> Show table scheme
+\q Quit
+
+ALTER USER user_name WITH PASSWORD 'new_password';
+
+LINUX
+Need to run createdb from usr account, NOT FROM PSQL
+ie run instructions from postgres@echo-base and view data in psql
+sudo -u postgres -i
+
+Linux Flask Run
+$ FLASK_APP=app.py FLASK_DEBUG=true flask run
+
+Migrate
+cd Git/Python/udacity/fullstack_nanodegree/todo
+flask db init
+flask db migrate
+flask db upgrade
+flask db downgrade
+
+
+WINDOWS
+In windows login to postgres:
+psql -U postgres
+
+Windows getting flask to run
+cd /d D:/Main/Files/Stephen/Git/python/udacity/fullstack_nanodegree
+set FLASK_APP=flask-hello-app.py
+flask run
+
+
+
+
+
+Overall Steps to Set Up & Run Migrations
+
+Bootstrap database migrate commands: link to the Flask app models and database, link to command line scripts for running migrations, set up folders to store migrations (as versions of the database)
+
+Run initial migration to create tables for SQLAlchemy models, recording the initial schema: ala git init && first git commit. Replaces use of db.create_all()
+
+Migrate on changes to our data models
+Make changes to the SQLAlchemy models
+Allow Flask-Migrate to auto-generate a migration script based on the changes
+Fine-tune the migration scripts
+Run the migration, aka “upgrade” the database schema by a “version”
