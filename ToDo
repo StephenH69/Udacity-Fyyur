@@ -1,0 +1,45 @@
+app.py
+
+97 TODO: replace with real venues data.
+124 TODO: implement search on artists with partial string search. Ensure it is case-insensitive.
+    seach for Hop should return "The Musical Hop".
+    search for "Music" should return "The Musical Hop" and "Park Square Live Music & Coffee"
+140 TODO: replace with real venue data from the venues table, using venue_id
+
+
+267 TODO: Complete this endpoint for taking a venue_id, and using
+    SQLAlchemy ORM to delete a record. Handle cases where the session commit could fail.
+    BONUS CHALLENGE: Implement a button to delete a Venue on a Venue Page, have it so that clicking that button delete it from the db then redirect the user to the homepage
+
+
+278 TODO: replace with real data returned from querying the database
+293 TODO: implement search on artists with partial string search. Ensure it is case-insensitive.
+    seach for "A" should return "Guns N Petals", "Matt Quevado", and "The Wild Sax Band".
+    search for "band" should return "The Wild Sax Band".
+
+
+309 TODO: replace with real venue data from the venues table, using venue_id
+402 TODO: populate form with fields from artist with ID <artist_id>
+407 TODO: take values from the form submitted, and update existing
+429 TODO: populate form with values from venue with ID <venue_id>
+434 TODO: take values from the form submitted, and update existing venue record with ID <venue_id> using the new attributes
+
+
+
+468 TODO: replace with real venues data.num_shows should be aggregated based on number of upcoming shows per venue.
+
+
+
+forms.py
+92 TODO implement enum restriction
+184 TODO implement validation logic for state
+191 TODO implement enum restriction
+216 TODO implement enum restriction
+220 TODO IMPLEMENT NEW ARTIST FORM AND NEW SHOW FORM
+
+
+
+
+
+
+
