@@ -17,11 +17,12 @@ install flask-SQLAlchemy
 install Flask-Migrate
 install Flask-Script
 install alembic
+install jsonify
 
-babel
-python-dateutil==2.6.0
-flask-moment
-flask-wtf
+install babel
+install python-dateutil
+install flask-moment
+install flask-wtf
 
 Use pip install -U Flask-SQLAlchemy
 
