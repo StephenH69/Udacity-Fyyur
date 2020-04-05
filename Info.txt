@@ -71,7 +71,7 @@ cd /d D:/Main/Files/Stephen/Git/python/udacity/fullstack_nanodegree
 set FLASK_APP=flask-hello-app.py
 flask run
 
-
+print(venue_shows, file=sys.stderr)
 
 
 
